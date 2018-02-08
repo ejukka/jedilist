@@ -311,7 +311,7 @@ header.masthead p {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
-.name {
+.name-enter {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -323,21 +323,30 @@ header.masthead p {
   font-size: 2rem;
 
 }
-.order-enter-active {
+.name-enter-active {
   max-height: 60x;
   padding: 2rem 0 !important;
   transform: translateX(0) rotate(0);
 }
 
-.order-leave {
+.name-leave {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   transform: translateX(0) rotate(0)
 }
 
-.order-leave-active{
+.name-leave-active{
 max-height: 0;
 padding: 0 !important;
 transform: translateX(120%) rotate(45deg);
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }

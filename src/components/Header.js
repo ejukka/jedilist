@@ -9,15 +9,16 @@ class Header extends Component {
         <div className="row">
           <div className="col-lg-10 mx-auto">
             <h1 className="text-uppercase">
+            <span>
             <CSSTransitionGroup
-                            component="strong"
-                            className="count"
-                            transitionName="count"
-                            transitionEnterTimeout={250}
-                            transitionLeaveTimeout={250}
-                        >
-              <strong className="name">Jedilist</strong>
+                  transitionName="example"
+                  transitionAppear={true}
+                  transitionAppearTimeout={250}
+                  transitionEnter={false}
+                  transitionLeave={false}>
+                  <strong>Jedilist</strong>
               </CSSTransitionGroup>
+              </span>
             </h1>
             <hr />
           </div>
